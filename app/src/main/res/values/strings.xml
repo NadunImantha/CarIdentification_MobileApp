@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">CW 01</string>
+
+    <!--Home Layout Strings-->
+    <string name="welcome_text">WELCOME</string>
+    <string name="let_s_do_the_challenge_text">Let’s \nDo The \nChallenge</string>
+    <string name="identify_the_car_make_btn">Identify The Car Make</string>
+    <string name="hint_btn">Hint</string>
+    <string name="identify_the_car_image_btn">Identify The Car Image</string>
+    <string name="advance_level_btn">Advance Level</string>
+
+    <!--Common Strings-->
+    <string name="back_button_content_text">Back Button</string>
+    <string name="car_image_content_text">Car Image</string>
+    <string name="wrong_text">WRONG!</string>
+    <string name="correct_text">correct_text</string>
+    <string name="submit_btn">Submit</string>
+
+    <!--Identify car make strings-->
+    <string name="make_title_textView">Identify The Car Make</string>
+    <string name="make_select_btn">Select</string>
+    <string name="make_identify_btn">Identify</string>
+    <string name="make_description_textView">Click the select button and \nidentify the car model</string>
+    <string name="hint_title_text">Hint</string>
+    <string name="hint_description_text">Guess the car model with \ncharacter by character.\nYou have only three attempts.</string>
+    <string name="guess_text">Guess</string>
+    <string name="hint_text">---</string>
+
+    <!--Identify car image strings-->
+    <string name="carImage_title_text">Identify Car Image</string>
+    <string name="carImage_description_text">Click on the image corresponding to the displayed name.</string>
+
+    <!--Advance level Strings-->
+    <string name="advance_title_text">Advance Level</string>
+    <string name="score_text">Score</string>
+    <string name="advance_description_text">Guess the car manufacturer names of all the 3 displayed cars using the corresponding 3 text-boxes. You have only three attempts.</string>
+    <string name="advance_car_name_text">Car Name</string>
+    <string name="next_btn_text">Next</string>
+    <string name="spinner_text">Select</string>
+
+    <!--popup strings-->
+    <string name="c_popup_correct_textView">CORRECT</string>
+    <string name="c_popup_textView">You have Successfully complete the challenge</string>
+    <string name="c_popup_button">Close</string>
+    <string name="w_popup_textView">WRONG</string>
+    <string name="w_popup_textView_2">You have failed to complete the challenge</string>
+    <string name="w_popup_button">Close</string>
+    <string name="tick_image_des">tick_image</string>
+    <string name="cross_image_des">cross_image</string>
+
+
+    <!--list of car names for the spinner(drop down menu)-->
+    <string-array name="car_names_array">
+        <item>Select</item>
+        <item>Aston Martin</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Benz</item>
+        <item>Bentley</item>
+        <item>Cadillac</item>
+        <item>Chevrolet</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>KIA</item>
+        <item>Lamborghini</item>
+        <item>Lotus</item>
+        <item>Lexus</item>
+        <item>Land Rover</item>
+        <item>Mitsubishi</item>
+        <item>Nisan</item>
+        <item>Porsche</item>
+        <item>Suzuki</item>
+        <item>Toyota</item>
+        <item>Tesla</item>
+        <item>Ferrari</item>
+    </string-array>
+</resources>

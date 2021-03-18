@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentifyCarMake"
+    android:background="@drawable/background">
+
+    <!--title-->
+    <TextView
+        android:id="@+id/make_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gill_sans_heavy_bold"
+        android:text="@string/make_title_textView"
+        android:textColor="#C9FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--back btn-->
+    <ImageButton
+        android:id="@+id/make_backBtn"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="17dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/back_button_content_text"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn"
+        android:onClick="backHome"/>
+
+    <!--car image-->
+    <ImageView
+        android:id="@+id/make_imageView"
+        android:layout_width="340sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/car_image_content_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_title" />
+
+    <!--correct car name-->
+    <TextView
+        android:id="@+id/make_carName_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/gill_sans_bold"
+        android:textColor="#FFFF29"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_imageView" />
+
+    <!--next btn-->
+    <Button
+        android:id="@+id/make_next_btn"
+        android:layout_width="146sp"
+        android:layout_height="43sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_white_btn"
+        android:text="@string/next_btn_text"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:fontFamily="@font/gill_sans_heavy_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_select_spinner"
+        android:onClick="nextBtn"/>
+
+    <!--Identify btn-->
+    <Button
+        android:id="@+id/make_identify_btn"
+        android:layout_width="146sp"
+        android:layout_height="43sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_blue_btn"
+        android:text="@string/make_identify_btn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/gill_sans_heavy_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_select_spinner"
+        android:onClick="identifyBtn"/>
+
+    <!-- Description text view-->
+    <TextView
+        android:id="@+id/make_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/make_description_textView"
+        android:textAlignment="center"
+        android:textColor="#C9FFFFFF"
+        android:textSize="13sp"
+        android:fontFamily="@font/gill_sans_heavy_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_identify_btn" />
+
+    <!--select car name-->
+    <Spinner
+        android:id="@+id/make_select_spinner"
+        android:layout_width="146sp"
+        android:layout_height="43sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_blue_btn"
+        android:popupBackground="@color/black_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_carName_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

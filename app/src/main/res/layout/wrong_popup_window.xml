@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="248dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:background="@drawable/wrong_popup_window_background">
+
+
+    <TextView
+        android:id="@+id/w_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="@string/w_popup_textView"
+        android:textColor="#963232"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/w_tick_imageView"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_textView"
+        app:srcCompat="@drawable/wrong_cross"
+        android:contentDescription="@string/cross_image_des" />
+
+    <TextView
+        android:id="@+id/w_message_textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gill_sans_heavy_bold"
+        android:gravity="center"
+        android:text="@string/w_popup_textView_2"
+        android:textColor="#963232"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_tick_imageView" />
+
+    <Button
+        android:id="@+id/w_close_btn"
+        android:layout_width="130sp"
+        android:layout_height="39sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/wrong_popup_close_btn"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="@string/w_popup_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_message_textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
